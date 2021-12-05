@@ -6,7 +6,7 @@ const os = require('os')
 const yargs = require('yargs/yargs')
 const { hideBin } = require('yargs/helpers')
 const argv = yargs(hideBin(process.argv)).options({
-	port: { type: 'string', default: '6595' },
+	port: { type: 'string', default: '80' },
 	host: { type: 'string', default: '127.0.0.1' },
   dev: { type: 'boolean', default: false}
 }).argv

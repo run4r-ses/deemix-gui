@@ -20,7 +20,7 @@ export { getSettings } from './main'
 
 // TODO: Remove type assertion while keeping correct types
 const argv = yargs(hideBin(process.argv)).options({
-	port: { type: 'string', default: '6595' },
+	port: { type: 'string', default: '80' },
 	host: { type: 'string', default: '127.0.0.1' }
 }).argv as Arguments
 
