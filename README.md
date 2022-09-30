@@ -9,17 +9,16 @@ You need to use nodejs 16.x, using `yarn` is recommended.
 
 If you're using git to get this repo you should use `git submodule update --init --recursive` as well. If you're just downloading the archive.zip, make sure you download and extract deemix-webui into the webui folder.
 
-Install the dependencies using `yarn install` or just `yarn`.
+Install the dependencies using `yarn install-all`.
 Then you should be able to run the app with `yarn start`.
+If you want to further develop Deemix and propose a PR, use `yarn dev`
 
 You can change the default port by setting the environment variable `PORT` to any other number before starting the app.
 
 ## Building the app
 To build the app you need to have git installed and the repo cloned with `git`.
-Make sure you've installed the dependencies for all packages (the root folder, `server` and `webui`).  
-You can install them with `yarn install-all`.  
-Then from the root folder run `yarn dist` to make a distributable package for your current OS or `yarn dist-server`
-to make an executable for only the server.
+Make sure you've installed the dependencies for all packages (the root folder, `server` and `webui`).
+Then from the root folder run `yarn dist` to make a distributable package for your current OS or `yarn dist-server` to make an executable for only the server.
 
 ## Feature requests
 Before asking for a feature make sure it isn't an already open issue on the repo
