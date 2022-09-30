@@ -9,9 +9,19 @@ You need to use nodejs 16.x, using `yarn` is recommended.
 
 If you're using git to get this repo you should use `git submodule update --init --recursive` as well. If you're just downloading the archive.zip, make sure you download and extract deemix-webui into the webui folder.
 
-Install the dependencies using `yarn install-all`.
+Install the dependencies using `yarn install-all` for production.
+Install the dependencies using `yarn install-all-dev` for development.
 Then you should be able to run the app with `yarn start`.
 If you want to further develop Deemix and propose a PR, use `yarn dev`
+
+Here as command examples:
+
+```sh
+# Production
+git clone https://gitlab.com/RemixDev/deemix-gui.git . && git submodule update --init --recursive && yarn install-all
+# Development
+git clone https://gitlab.com/RemixDev/deemix-gui.git . && git submodule update --init --recursive && yarn install-all--dev
+```
 
 You can change the default port by setting the environment variable `PORT` to any other number before starting the app.
 
@@ -35,4 +45,4 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License
-along with this program.  If not, see <https://www.gnu.org/licenses/>.
+along with this program. If not, see <https://www.gnu.org/licenses/>.
