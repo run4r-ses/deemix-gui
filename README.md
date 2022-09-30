@@ -20,7 +20,7 @@ Here as command examples:
 # Production
 git clone https://gitlab.com/RemixDev/deemix-gui.git . && git submodule update --init --recursive && yarn install-all
 # Development
-git clone https://gitlab.com/RemixDev/deemix-gui.git . && git submodule update --init --recursive && yarn install-all--dev
+git clone https://gitlab.com/RemixDev/deemix-gui.git . && git submodule update --init --recursive && yarn install-all-dev
 ```
 
 You can change the default port by setting the environment variable `PORT` to any other number before starting the app.
